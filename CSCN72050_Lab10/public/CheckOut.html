@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/get_styles/style.css">
+    <title>Check Out and Log in</title>
+</head>
+
+<body class="checkout">
+    <h1>Check Out Page</h1>
+
+
+    <div>
+        <h3>Login</h1>
+    </div>
+    <form id="signin" method="POST">
+        Username
+        <br />
+        <input type="text" name="Username" id="Username" />
+        <br />
+        Password
+        <br />
+        <input type="password" name="Password" id="Password" />
+        <br />
+        <a href="#" onclick="Login()">
+            Click to Login
+        </a>
+    </form>
+
+    <script>
+        function Login() {
+            var action = "/signin?";
+
+            var user = document.getElementById("Username").value;
+            var pass = document.getElementById("Password").value;
+
+            action += ("user=" + user + "&" + "pass=" + pass);
+
+            document.getElementById("signin").action = action;
+            document.getElementById("signin").submit();
+
+        }
+    </script>
+
+    <br />
+    <br />
+    <br />
+
+    <form id="confirm" method="GET">
+        <button href="#" onclick="confirm()">Purchase item(s)</button>
+    </form>
+
+<script src="get_scripts/addcart.js"></script>
+
+</body>
+
+<br />
+<br />
+<br />
+
+<footer>
+    <a href="/">Back to home</a>
+</footer>

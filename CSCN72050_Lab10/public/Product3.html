@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href = "/get_styles/style.css">
+    <title>Dark Souls 3</title>
+</head>
+
+<body class="prod3">
+    <h1>Dark Souls 3</h1>
+    <h3><a href="https://en.wikipedia.org/wiki/Dark_Souls_III">What Dark Souls 3 is all about!!!</a></h3>
+
+    <img src="/get_images/Product3.jpg" style="border: 5px solid #555;"/>
+    
+    <br>
+    <br>
+
+    <p>Price $60</p>
+    <p>Select Quantity:</p>
+    <select id="quantity" onchange="calculatePrice()">
+        <option value="0">Choose quantity...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    
+
+
+    <button id="addtocart" onclick="calculateQuantity('DarkSouls3')">Add to Cart</button>
+
+    <br />
+    <br />
+    <br />
+    <footer>
+        <a href="/">Back to home</a>
+    </footer>
+
+    <script src="get_scripts/addcart.js"></script>
+</body>
